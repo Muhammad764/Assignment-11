@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "Image": "http://placehold.it/32x32",
+    "name": "Lawanda Peck",
+    "description": "hi",
+    "price": "$60",
+    "quantity": "10",
+    "supplier": ""
+  },
+  {
+    "id": 2,
+    "Image": "http://placehold.it/32x32",
+    "name": "Mccarthy Haynes",
+    "description": "hi",
+    "price": "$60",
+    "quantity": "10",
+    "supplier": ""
+  },
+  {
+    "id": 3,
+    "Image": "http://placehold.it/32x32",
+    "name": "Williams Miranda",
+    "description": "hi",
+    "price": "$60",
+    "quantity": "10",
+    "supplier": ""
+  },
+  {
+    "id": 4,
+    "Image": "http://placehold.it/32x32",
+    "name": "Elizabeth Rice",
+    "description": "hi",
+    "price": "$60",
+    "quantity": "10",
+    "supplier": ""
+  },
+  {
+    "id": 5,
+    "Image": "http://placehold.it/32x32",
+    "name": "Dejesus Christensen",
+    "description": "hi",
+    "price": "$60",
+    "quantity": "10",
+    "supplier": ""
+  },
+  {
+    "id": 6,
+    "Image": "http://placehold.it/32x32",
+    "name": "Howell Dillard",
+    "description": "hi",
+    "price": "$60",
+    "quantity": "10",
+    "supplier": ""
+  }
+]
