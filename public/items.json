@@ -2,55 +2,61 @@
   {
     "id": 1,
     "img": "./Image/pic1.jpg",
-    "name": "Lawanda Peck",
-    "description": "hi",
-    "price": "$60",
+    "name": "V100",
+    "description": "A High tech build from core best jumping star Master",
+    "price": "$180",
     "quantity": "10",
-    "supplier": ""
+    "supplier": "Veloce",
+     "sold":"6"
   },
   {
     "id": 2,
     "img": "./Image/pic2.jpg",
-    "name": "Mccarthy Haynes",
-    "description": "hi",
-    "price": "$60",
+    "name": "V200",
+    "description": "Most grip power 200 bold with jump motion",
+    "price": "$160",
     "quantity": "10",
-    "supplier": ""
+    "supplier": "Veloce",
+     "sold":"6"
   },
   {
     "id": 3,
     "img": "./Image/pic3.jpg",
-    "name": "Williams Miranda",
-    "description": "hi",
-    "price": "$60",
+    "name": "X Urban",
+    "description": "Most popular selling Urban X with high build quality",
+    "price": "$170",
     "quantity": "10",
-    "supplier": ""
+    "supplier": "Veloce",
+     "sold":"4"
   },
   {
     "id": 4,
     "img": "./Image/pic4.jpg",
-    "name": "Elizabeth Rice",
-    "description": "hi",
-    "price": "$60",
+    "name": "Urban 2.0",
+    "description": "Get some modified with X version and Extract the beck",
+    "price": "$160",
     "quantity": "10",
-    "supplier": ""
+    "supplier": "Veloce",
+     "sold":"2"
   },
   {
     "id": 5,
     "img": "./Image/pic5.jpg",
-    "name": "Dejesus Christensen",
-    "description": "hi",
-    "price": "$60",
+    "name": "X Urban 2022",
+    "description": "The new Veloce for 2022 edition with lots of futures",
+    "price": "$180",
     "quantity": "10",
-    "supplier": ""
+    "supplier": "Veloce",
+     "sold":"8"
   },
   {
     "id": 6,
     "img": "./Image/pic6.jpg",
-    "name": "Howell Dillard",
-    "description": "hi",
-    "price": "$60",
+    "name": "Max Bold",
+    "description": "The max bold with midrange for people choice",
+    "price": "$80",
     "quantity": "10",
-    "supplier": ""
+    "supplier": "Veloce",
+    "sold":"8"
   }
 ]

@@ -12,8 +12,7 @@ const Items = () => {
     },[])
     return (
         <div>
-            <h1>Our Items</h1>
-            <div className='items-container'>
+            <div className='items-container mt-5 mb-5'>
                  {
                 items.map(item => <Item
                  key={item.id}

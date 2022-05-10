@@ -4,14 +4,14 @@ import './Item.css'
 const Item = ({ item }) => {
     const {name,img,description,price,quantity,supplier}= item
     return (
-        <div className='item'>
+        <div className='item p-2 shadow'>
             <img className='img'  src={img} alt="" />
-            <h3>{name}</h3>
-            <p>{description}</p>
-            <p>{price}</p>
-            <p>{quantity}</p>
-            <p>{supplier}</p>
-            <button>Update</button>
+            <h3 className='pt-2'>{name}</h3>
+            <p>Description: {description}</p>
+            <p>Price: {price}</p>
+            <p>Quantity: {quantity}</p>
+            <p>Supplier: {supplier}</p>
+            <button className='btn btn-dark text-danger shadow mb-2'>Stock Update</button>
 
         </div>
     );
