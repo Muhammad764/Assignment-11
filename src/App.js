@@ -1,12 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
+import AddItem from './Pages/AddItem/AddItem';
 import Blogs from './Pages/Blogs/Blogs';
 import Checkout from './Pages/Checkout/Checkout';
 import Home from './Pages/Home/Home/Home';
 import Items from './Pages/Home/Items/Items';
 import ItemsDetail from './Pages/ItemsDetail/ItemsDetail';
 import Login from './Pages/Login/Login';
+import ManageItem from './Pages/ManageItem/ManageItem';
 import Register from './Pages/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -28,6 +30,12 @@ function App() {
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/checkout' element={<RequireAuth>
           <Checkout></Checkout>
+        </RequireAuth>}></Route>
+        <Route path='/addItem' element={<RequireAuth>
+          <AddItem></AddItem>
+        </RequireAuth>}></Route>
+        <Route path='/manageItem' element={<RequireAuth>
+          <ManageItem></ManageItem>
         </RequireAuth>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes >
