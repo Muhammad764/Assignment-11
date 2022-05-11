@@ -78,7 +78,7 @@ const Login = () => {
           <p>Dont have an account? <Link to="/register" className='fw-bold pe-auto text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
 
           
-          <p>Forget password ? <button type="button" style={{color :'#FF4500'}} class="btn btn-link text-decoration-none fw-bold" onClick={resetPassword}>Reset Password</button></p>
+          <p>Forget password ? <button type="button" style={{color :'#FF4500'}} className="btn btn-link text-decoration-none fw-bold" onClick={resetPassword}>Reset Password</button></p>
           
           <SocialLogin></SocialLogin>
           <ToastContainer />

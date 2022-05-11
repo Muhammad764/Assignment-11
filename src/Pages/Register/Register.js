@@ -20,7 +20,7 @@ const Register = () => {
         const email = emailRef.current.value
         const password = passwordRef.current.value
         
-        createUserWithEmailAndPassword(name,email,password)
+        createUserWithEmailAndPassword(email,password)
         
     }
 
