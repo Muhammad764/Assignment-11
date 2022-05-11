@@ -55,8 +55,8 @@ const Login = () => {
 
     
     return (
-        <div style={{width :"450px"}} className='shadow  mx-auto mb-5 mt-3 rounded'>
-            <h2 className='text-primary my-3 pt-4'>Please Login</h2>
+        <div style={{width :"450px"}} className='shadow  mx-auto mb-5 mt-4 rounded'>
+            <h2 className='text-muted my-3 pt-4'>Please Login</h2>
             <div className='w-75 mx-auto mt-5'>
                   <Form onSubmit={handleSubmit}>
  <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -69,15 +69,15 @@ const Login = () => {
   <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
   </Form.Group>
   
-  <Button className='w-100 mb-5 py-2' variant="primary" type="submit">
+  <Button className='w-100 mb-5 py-2' variant="danger" type="submit">
     Login
   </Button>
 </Form>
         
-          <p>Dont have an account? <Link to="/register" className='fw-bold text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+          <p>Dont have an account? <Link to="/register" className='fw-bold pe-auto text-danger text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
 
           
-          <p>Forget password ? <button type="button" class="btn btn-link text-decoration-none" onClick={resetPassword}>Reset Password</button></p>
+          <p>Forget password ? <button type="button" style={{color :'#FF4500'}} class="btn btn-link text-decoration-none fw-bold" onClick={resetPassword}>Reset Password</button></p>
           
           
           <ToastContainer />
