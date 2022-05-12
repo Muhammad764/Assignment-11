@@ -1,0 +1,8 @@
+.baton{
+    background-color: rgb(236, 63, 63);
+    color: white
+}
+.baton:hover{
+    background-color: black ;
+    color: white;
+}

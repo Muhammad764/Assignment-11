@@ -12,7 +12,7 @@ const Header = () => {
   }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" className='fixed-top' bg="dark" variant="dark">
   <Container>
     <Navbar.Brand as={Link} to="/" className='d-flex'>              
       <h2>VEL<span className='text-danger'>OCE</span></h2></Navbar.Brand>
