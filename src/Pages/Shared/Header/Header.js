@@ -21,9 +21,6 @@ const Header = () => {
     <Nav className="me-auto">  
     </Nav>
     <Nav>
-      
-                <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
-                <Nav.Link as={Link} to="about">About</Nav.Link>
                 {
                   user && <>
                   <Nav.Link as={Link} to="addItem">Add Item</Nav.Link>
@@ -31,11 +28,14 @@ const Header = () => {
                   <Nav.Link as={Link} to="orders">My Item</Nav.Link>
                   </>
                 }
+                 <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
+                <Nav.Link as={Link} to="about">About</Nav.Link>
                 {user ?
                    <Nav.Link onClick={handleSignOut}  as={Link} className="text-danger"  to="login">Sing out</Nav.Link>
                   :
                   <Nav.Link as={Link} to="login">Login</Nav.Link>
                 }
+                
     </Nav>
   </Navbar.Collapse>
   </Container>

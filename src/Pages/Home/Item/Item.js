@@ -10,7 +10,7 @@ const Item = ({ item }) => {
         navigate(`/item/${id}`)
     } 
     return (
-        <div className='item p-2 shadow'>
+        <div className='item p-2 mt-4 shadow'>
             <img className='img'  src={img} alt="" />
             <h3 className='pt-2'>{name}</h3>
             <p>Description: {description}</p>
