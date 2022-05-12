@@ -21,12 +21,14 @@ const Header = () => {
     <Nav className="me-auto">  
     </Nav>
     <Nav>
-      <Nav.Link as={Link} to="items">My Items</Nav.Link>
+      
                 <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
+                <Nav.Link as={Link} to="about">About</Nav.Link>
                 {
                   user && <>
                   <Nav.Link as={Link} to="addItem">Add Item</Nav.Link>
                   <Nav.Link as={Link} to="manageItem">Manage Item</Nav.Link>
+                  <Nav.Link as={Link} to="orders">My Item</Nav.Link>
                   </>
                 }
                 {user ?

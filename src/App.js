@@ -9,6 +9,7 @@ import Items from './Pages/Home/Items/Items';
 import ItemsDetail from './Pages/ItemsDetail/ItemsDetail';
 import Login from './Pages/Login/Login';
 import ManageItem from './Pages/ManageItem/ManageItem';
+import Order from './Pages/Order/Order';
 import Register from './Pages/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -28,7 +29,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/checkout' element={<RequireAuth>
+        <Route path='/checkout/:itemId' element={<RequireAuth>
           <Checkout></Checkout>
         </RequireAuth>}></Route>
         <Route path='/addItem' element={<RequireAuth>
@@ -36,6 +37,9 @@ function App() {
         </RequireAuth>}></Route>
         <Route path='/manageItem' element={<RequireAuth>
           <ManageItem></ManageItem>
+        </RequireAuth>}></Route>
+        <Route path='/orders' element={<RequireAuth>
+          <Order></Order>
         </RequireAuth>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes >

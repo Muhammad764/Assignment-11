@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useItemDetail from '../../Hooks/useItemDetail';
 import './ItemsDetail.css'
 
 const ItemsDetail = () => {
     const {itemId}= useParams()
-    const [item, setItem] = useState({})
-    
-    useEffect(() => {
-       const url = `http://localhost:5000/item/${itemId}`  
-        
-        fetch(url)
-        .then(res => res.json())
-        .then(data => setItem(data))
-    },[])
+    const [item] = useItemDetail(itemId)
     
     return (
         <div className='detail'>
@@ -25,7 +17,7 @@ const ItemsDetail = () => {
             <p>quantity:{item.quantity}</p>
             <p>supplier:{item.supplier}</p>
             <p>sold:{item.sold}</p>
-            <Link to="/checkout">
+            <Link to={`/checkout/${itemId}`}>
                 <button className='btn btn-danger'>Delivery</button>
             </Link>
         </div>
