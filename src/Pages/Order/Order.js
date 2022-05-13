@@ -11,7 +11,7 @@ const Order = () => {
     const handelDelete = id => {
         const proceed = window.confirm('Are You Sure?')
         if(proceed){
-            const url = `http://localhost:5000/item/${id}`;
+            const url = `https://mighty-reaches-68293.herokuapp.com/item/${id}`;
             fetch(url, {
                 method:'DELETE'
             })
@@ -27,7 +27,7 @@ const Order = () => {
     useEffect(() => {
         const getOrders = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/order?email=${email}`
+            const url = `https://mighty-reaches-68293.herokuapp.com/order?email=${email}`
             const { data } = await axios.get(url, {
                 headers: {
                     authorization:`Bearer ${localStorage.getItem('accessToken')}`
@@ -43,7 +43,7 @@ const Order = () => {
             <h2>Your Orders: {orders.length}</h2>
             {
                 orders.map(order => <div key={order._id}>
-                    <h5 className='mt-4'>{order.name} {order.price} {order.email} <span className='ms-4'>{order.item}</span> <button onClick={()=>handelDelete(order._id)} className='btn btn-danger ms-5 fw-bold'>Delete</button></h5> 
+                    <h5 className='mt-4'> {order.email} <span className='ms-4'>{order.item}</span> <button onClick={()=>handelDelete(order._id)} className='btn btn-danger ms-5 fw-bold'>Delete</button></h5> 
                     </div>)
             }
         </div>

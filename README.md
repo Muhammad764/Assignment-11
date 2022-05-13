@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://bicycle-assignment.web.app/).
+
+**A full-stack website
+**In this website you can see inventory product
+**You have see authentication both firebase and login/register
+**Added 2 more section and banner 
+**You can add items,manage items,and see also your items
 
 ## Available Scripts
 
