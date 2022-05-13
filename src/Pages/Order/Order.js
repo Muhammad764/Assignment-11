@@ -7,6 +7,22 @@ import './Orders.css'
 const Order = () => {
     const [user] = useAuthState(auth)
     const [orders, setOrders] = useState([]) 
+
+    const handelDelete = id => {
+        const proceed = window.confirm('Are You Sure?')
+        if(proceed){
+            const url = `http://localhost:5000/item/${id}`;
+            fetch(url, {
+                method:'DELETE'
+            })
+            .then(res => res.json())
+            .then(data => {
+            console.log(data)
+            const remaining = orders.filter(order => order._id !== id);
+            setOrders(remaining);
+            })
+        }
+    }
     
     useEffect(() => {
         const getOrders = async () => {
@@ -25,6 +41,11 @@ const Order = () => {
     return (
         <div className='order'>
             <h2>Your Orders: {orders.length}</h2>
+            {
+                orders.map(order => <div key={order._id}>
+                    <h5 className='mt-4'>{order.name} {order.price} {order.email} <span className='ms-4'>{order.item}</span> <button onClick={()=>handelDelete(order._id)} className='btn btn-danger ms-5 fw-bold'>Delete</button></h5> 
+                    </div>)
+            }
         </div>
     );
 };

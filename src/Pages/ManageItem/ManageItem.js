@@ -4,7 +4,6 @@ import './ManageItem.css'
 
 const ManageItem = () => {
     const [items, setItems] = useItems();
-    
     const handelDelete = id => {
         const proceed = window.confirm('Are You Sure?')
         if(proceed){
@@ -25,7 +24,7 @@ const ManageItem = () => {
             <h2 className='text-muted mb-4 mt-2'>Manage Your Item</h2>
             {
             items.map(item => <div key={item._id}>
-            <h5>{item.name} <button onClick={()=>handelDelete(item._Id)} className='btn btn-danger fw-bold'>X</button></h5>
+            <h4>{item.name} <button onClick={()=>handelDelete(item._id)} className='btn btn-danger ms-3 fw-bold'>Delete</button></h4>
              </div>)
             }
         </div>

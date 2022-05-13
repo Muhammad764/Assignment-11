@@ -28,9 +28,7 @@ const AddItem = () => {
       <input placeholder='Name'  className='w-50' {...register("name", { required: true, maxLength: 20 })} /> <br/>
       <textarea placeholder='Description' className='mt-2 w-50' {...register("description")} /><br/>
       <input placeholder='Price' className='mt-1 w-50' type="number" {...register("price")} /><br/>
-      <input placeholder='Quantity' className='mt-2 w-50' type="number" {...register("Quantity")} /><br/>
       <input placeholder='Photo URL' className='mt-2 w-50' type="text" {...register("img")} /><br/>
-      <input placeholder='Supplier Name' className='mt-2 w-50' type="text" {...register("Supplier name")} /><br/>
       <input className='mt-2 w-50 bg-danger border-0 py-2' type="submit" value="Add Item" />
     </form>
 

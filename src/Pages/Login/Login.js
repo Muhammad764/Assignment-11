@@ -60,7 +60,7 @@ const Login = () => {
 
     
     return (
-        <div style={{width :"450px"}} className='shadow  mx-auto mb-5 mt-4 rounded'>
+        <div style={{width :"450px",marginTop:'80px'}} className='shadow  mx-auto mb-5rounded'>
             <h2 className='text-muted my-3 pt-4'>Please Login</h2>
             <div className='w-75 mx-auto mt-5'>
                   <Form onSubmit={handleSubmit}>

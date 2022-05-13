@@ -35,7 +35,7 @@ const Register = () => {
   
 
     return (
-        <div style={{width :"450px"}} className='shadow  mx-auto mb-5 mt-4 rounded'>
+        <div style={{width :"450px",marginTop:'80px'}} className='shadow  mx-auto mb-5 rounded'>
             <h2 className='mt-3 text-muted pt-3'>Please Register</h2>
             <div className='w-75 mx-auto mt-4'>
                   <Form onSubmit={handleSubmit}>
