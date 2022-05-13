@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# VELOCE 
 
-This project was bootstrapped with [Create React App](https://bicycle-assignment.web.app/).
+This project was bootstrapped with [https://bicycle-assignment.web.app/](https://bicycle-assignment.web.app/).
 
 * A full-stack website
 * In this website you can see inventory product
